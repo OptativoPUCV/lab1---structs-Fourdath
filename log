@@ -2,3 +2,13 @@ Fri 10 Mar 2023 12:12:39 PM UTC:
  tests:  0|7
 total_score: 0/70
 ee7a730
+Fri 10 Mar 2023 12:26:44 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:18:9: error: expected expression before ‘;’ token
+   18 |   *a -=*;
+      |         ^
+Compilation failed
+95dd63d
