@@ -105,8 +105,8 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
   for (i = 0; i < tam ;i++){
     c[i] = a[i] + b[i]; 
   }
-
-}*/
+*/
+}
 
 /*
 Ejercicio 8.
