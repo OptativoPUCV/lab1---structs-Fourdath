@@ -13,11 +13,9 @@ Programe la función void swap(int *a, int *b), la cual
 intercambia los valores de las variables apuntadas por a y b.
 */
 void swap(int *a, int *b) {
-  int temp ;
-  temp = *a;
-  *b= *a;
-  *b = temp;
-
+*a += *b;
+*b = *a-*b;
+*a -=*b;
 }
 
 /*
