@@ -105,3 +105,18 @@ exercises.c:105:17: error: invalid operands to binary + (have ‘Vector’ and �
       |             Vector Vector
 Compilation failed
 6813eec
+Sat 11 Mar 2023 08:30:47 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:104:13: error: incompatible types when initializing type ‘int’ using type ‘Vector’
+  104 |   int tam = *a = *b;
+      |             ^
+exercises.c:106:17: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  106 |     c[i] = a[i] + b[i];
+      |            ~~~~ ^ ~~~~
+      |             |      |
+      |             Vector Vector
+Compilation failed
+afb2e6e
