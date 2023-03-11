@@ -60,3 +60,17 @@ Sat 11 Mar 2023 05:50:24 PM UTC:
  tests:  1|6
 total_score: 10/70
 0701009
+Sat 11 Mar 2023 05:50:33 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:31:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   31 |   for (i=0;i < a[i];i++ )
+      |   ^~~
+exercises.c:35:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   35 |     if(a[i] < *min)
+      |     ^~
+cc1: all warnings being treated as errors
+Compilation failed
+c24a31e
