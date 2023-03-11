@@ -101,7 +101,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
   int i ;
-  int tam = *a = *b;
+  tam = *a = *b;
   for (i = 0; i < tam ;i++){
     c[i] = a[i] + b[i]; 
   }

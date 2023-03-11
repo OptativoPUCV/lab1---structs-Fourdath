@@ -120,3 +120,20 @@ exercises.c:106:17: error: invalid operands to binary + (have ‘Vector’ and �
       |             Vector Vector
 Compilation failed
 afb2e6e
+Sat 11 Mar 2023 08:31:08 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:104:3: error: ‘tam’ undeclared (first use in this function); did you mean ‘tan’?
+  104 |   tam = *a = *b;
+      |   ^~~
+      |   tan
+exercises.c:104:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:106:17: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  106 |     c[i] = a[i] + b[i];
+      |            ~~~~ ^ ~~~~
+      |             |      |
+      |             Vector Vector
+Compilation failed
+643ecda
