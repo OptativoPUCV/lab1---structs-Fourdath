@@ -85,8 +85,8 @@ Vector * crearVector(int n) {
       }
     } /*else { 
       vector = NULL; 
-    }
-  }*/
+    }*/
+  }
   return vector;
    //return NULL;
 }
