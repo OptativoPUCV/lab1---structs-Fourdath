@@ -83,12 +83,10 @@ Vector * crearVector(int n) {
       for (int i = 0; i < n; i++) {
         vector->datos[i] = 0; 
       }
-    } /*else { 
-      vector = NULL; 
-    }*/
+    } 
   }
   return vector;
-   //return NULL;
+
 }
 
 /*
