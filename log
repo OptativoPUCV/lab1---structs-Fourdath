@@ -198,3 +198,16 @@ exercises.c:88:8: error: ‘Vector’ has no member named ‘arreglo’
       |        ^~
 Compilation failed
 c6d354c
+Mon 13 Mar 2023 02:44:38 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:87:22: error: ‘Vector’ has no member named ‘valor’
+   87 |   if (i >= 0 && i < v->valor) {
+      |                      ^~
+exercises.c:88:8: error: ‘Vector’ has no member named ‘vector’
+   88 |       v->vector[i] = valor;
+      |        ^~
+Compilation failed
+ded35d2
