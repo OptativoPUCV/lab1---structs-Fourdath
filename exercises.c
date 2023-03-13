@@ -88,7 +88,7 @@ Vector * crearVector(int n) {
       v = NULL; 
     }
   }
-  return v
+  return v;
    //return NULL;
 }
 
