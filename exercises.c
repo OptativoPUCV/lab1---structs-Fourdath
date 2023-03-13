@@ -84,7 +84,9 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-
+  if (i >= 0 && i < v->tam) { 
+      v->arreglo[i] = valor; 
+    }
 }
 
 /*
@@ -102,10 +104,7 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-  int i, tam = a->tam; 
-  for (i = 0; i < tam; i++) {
-    c->arreglo[i] = a->arreglo[i] + b->arreglo[i];
-  }
+
 }
 
 
