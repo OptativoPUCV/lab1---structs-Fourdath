@@ -84,7 +84,7 @@ Vector * crearVector(int n) {
         v->datos[i] = 0; 
       }
     } else { 
-      free(v); 
+      //free(v); 
       v = NULL; 
     }
   }
