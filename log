@@ -166,3 +166,22 @@ Sat 11 Mar 2023 08:39:32 PM UTC:
  tests:  3|4
 total_score: 30/70
 a0e263e
+Mon 13 Mar 2023 02:35:15 AM UTC: 
+ exercises.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:105:17: error: ‘Vector’ has no member named ‘tam’
+  105 |   int i, tam = a->tam;
+      |                 ^~
+exercises.c:107:6: error: ‘Vector’ has no member named ‘arreglo’
+  107 |     c->arreglo[i] = a->arreglo[i] + b->arreglo[i];
+      |      ^~
+exercises.c:107:22: error: ‘Vector’ has no member named ‘arreglo’
+  107 |     c->arreglo[i] = a->arreglo[i] + b->arreglo[i];
+      |                      ^~
+exercises.c:107:38: error: ‘Vector’ has no member named ‘arreglo’
+  107 |     c->arreglo[i] = a->arreglo[i] + b->arreglo[i];
+      |                                      ^~
+Compilation failed
+3e43f75
