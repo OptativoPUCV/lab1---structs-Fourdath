@@ -211,3 +211,24 @@ exercises.c:88:8: error: ‘Vector’ has no member named ‘vector’
       |        ^~
 Compilation failed
 ded35d2
+Mon 13 Mar 2023 02:55:48 AM UTC: 
+ exercises.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:91:11: error: expected ‘;’ before ‘}’ token
+   91 |   return v
+      |           ^
+      |           ;
+   92 |    //return NULL;
+   93 | }
+      | ~          
+exercises.c: In function ‘asignarValor’:
+exercises.c:101:22: error: ‘Vector’ has no member named ‘valor’
+  101 |   if (i >= 0 && i < v->valor) {
+      |                      ^~
+exercises.c:102:8: error: ‘Vector’ has no member named ‘vector’
+  102 |       v->vector[i] = valor;
+      |        ^~
+Compilation failed
+bc713f6

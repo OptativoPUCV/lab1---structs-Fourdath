@@ -75,7 +75,21 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   return NULL;
+  Vector *v = (Vector*) malloc(sizeof(Vector)); 
+  if (v != NULL) { 
+    v->datos = (int*) malloc(n * sizeof(int)); 
+    if (v->datos != NULL) { 
+      v->capacidad = n; 
+      for (int i = 0; i < n; i++) {
+        v->datos[i] = 0; 
+      }
+    } else { 
+      free(v); 
+      v = NULL; 
+    }
+  }
+  return v
+   //return NULL;
 }
 
 /*
